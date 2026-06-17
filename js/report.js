@@ -200,8 +200,8 @@ const ReportGenerator = (() => {
         correct: q.correct,
         timeMs: q.time,
         skills: SkillTaxonomy.getSkillsForQuestion(q.questionId).map((s) => ({
-          id: s.skillId,
-          name: s.skillName,
+          id: s.id,
+          name: s.name,
           domain: s.domainName,
           topic: s.topicName,
         })),

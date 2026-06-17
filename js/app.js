@@ -464,7 +464,7 @@ const App = (() => {
     return {
       meta: { testName: 'NSW Y10 Mathematics Diagnostic Assessment', date: new Date().toISOString(), version: '1.0', totalQuestions: es.total, totalCorrect: es.correct, accuracy: es.accuracy, estimatedLevel: es.level, performanceBand: es.band, elapsedMinutes: es.elapsedMinutes, avgTimeSeconds: es.avgTimeSeconds },
       skillReport: rc,
-      questionLog: aq.map((q, i) => { const skills = SkillTaxonomy.getSkillsForQuestion(q.questionId); return { index: i + 1, questionId: q.questionId, difficulty: q.difficulty, correct: q.correct, timeMs: q.time, skills: skills.map(s => ({ id: s.skillId, name: s.skillName, domain: s.domainName, topic: s.topicName })) }; }),
+      questionLog: aq.map((q, i) => { const skills = SkillTaxonomy.getSkillsForQuestion(q.questionId); return { index: i + 1, questionId: q.questionId, difficulty: q.difficulty, correct: q.correct, timeMs: q.time, skills: skills.map(s => ({ id: s.id, name: s.name, domain: s.domainName, topic: s.topicName })) }; }),
     };
   }
 
