@@ -1,0 +1,6 @@
+.DS_Store
+server.py
+decrypt.py
+prerender_tikz.py
+__pycache__/
+*.pyc
