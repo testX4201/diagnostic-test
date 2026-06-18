@@ -256,7 +256,7 @@ const App = (() => {
         </div>
         <div class="info-block">
           <p><strong>Download Results File</strong></p>
-          <p>Click below to download your encrypted diagnostic report. Give this file to your tutor.</p>
+          <p>Click below to download your encrypted diagnostic report. Send this file to me via email.</p>
           <button class="btn btn-primary btn-block" onclick="App.downloadReport()" style="margin-top:0.5rem;">DOWNLOAD ENCRYPTED REPORT</button>
           <p id="dl-status" style="font-size:0.75rem;margin-top:0.5rem;color:var(--muted);"></p>
         </div>
